@@ -36,6 +36,7 @@ text ("Score:  "+score,300,50)
     }
 if (fruit.isTouching(monkey)){
   score=score+1
+  monkey.scale=monkey.scale+0.1
   fruit.destroyEach();
 }
   if (obstacles.isTouching(monkey)){
