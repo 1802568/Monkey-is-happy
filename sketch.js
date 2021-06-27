@@ -45,6 +45,7 @@ text("Game Over",300,300)
     background.depth=monkey.depth+1
     background.depth=banana.depth+1
     background.depth=obstacle.depth+1
+    monkey.destroy()
     obstacles.destroyEach()
     fruit.destroyEach()
     
