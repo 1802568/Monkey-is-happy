@@ -23,6 +23,7 @@ monkey = createSprite(80,315,20,20)
   monkey.scale=0.1
 score=0
   fruit = createGroup();
+  obstacles = createGroup();
   ground = createSprite(80,350,1100,20)
 }
 
@@ -35,6 +36,14 @@ text ("Score:  "+score,300,50)
     }
 if (fruit.isTouching(monkey)){
   score=score+1
+  fruit.destroyEach();
+}
+  if (obstacles.isTouching(monkey)){
+text("Game Over",300,300)
+    obstacles.velocityX=0
+    fruit.velocityY=0
+    obstacles.destroyEach()
+    fruit.destroyEach()
 }
   console.log(monkey.y)
   
@@ -58,6 +67,7 @@ function spawnObstacles(){
     //assign scale and lifetime to the obstacle           
     obstacle.scale = 0.2;
     obstacle.lifetime = 300;
+   obstacles.add(obstacle)
    
    //add each obstacle to the group
  }
