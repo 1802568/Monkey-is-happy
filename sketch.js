@@ -42,8 +42,12 @@ if (fruit.isTouching(monkey)){
 text("Game Over",300,300)
     obstacles.velocityX=0
     fruit.velocityY=0
+    background.depth=monkey.depth+1
+    background.depth=banana.depth+1
+    background.depth=obstacle.depth+1
     obstacles.destroyEach()
     fruit.destroyEach()
+    
 }
   console.log(monkey.y)
   
