@@ -48,7 +48,8 @@ text("Game Over",300,300)
     monkey.destroy()
     obstacles.destroyEach()
     fruit.destroyEach()
-    
+    fruit.destroy()
+    fruit.destroy()
 }
   console.log(monkey.y)
   
@@ -65,7 +66,7 @@ function spawnObstacles(){
  if (frameCount % 80 === 0){
    obstacle = createSprite(600,310,10,40);
   
-   obstacle.velocityX = -6;
+  noLoop( obstacle.velocityX = -6;)
    obstacle.addImage("obstacle.png", obstacleImage)
 
    
@@ -83,7 +84,7 @@ function spawnfruit(){
  if (frameCount % 60 === 0){
   banana = createSprite(600,200,10,40);
   
-   banana.velocityX = -6;
+  noLoop( banana.velocityX = -6;)
    banana.addImage("obstacle.png", bananaImage)
 
    
