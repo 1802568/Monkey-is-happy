@@ -67,7 +67,7 @@ function spawnObstacles(){
  if (frameCount % 80 === 0){
    obstacle = createSprite(600,310,10,40);
   
-  noLoop( obstacle.velocityX = -6)
+  noLoop( obstacle.velocityX = -6))
    obstacle.addImage("obstacle.png", obstacleImage)
 
    
