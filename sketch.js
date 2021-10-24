@@ -52,7 +52,7 @@ text("Game Over",300,300)
     fruit.destroy()
     fruit.destroy()
 }
-  console.log(monkey.y)
+  
   
 monkey.velocityY = monkey.velocityY + 0.8
 
